@@ -1,16 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://btjkbbl60rhjh"]
-
-[ext_resource type="PackedScene" uid="uid://dk2x2qhw4kgcw" path="res://player.tscn" id="1_u52ul"]
+[gd_scene load_steps=3 format=3 uid="uid://btjkbbl60rhjh"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5xgho"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u52ul"]
-size = Vector2(11.530001, 2500003.2)
+size = Vector2(17.257502, 5825001)
 
 [node name="Level" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1154, 643)
+scale = Vector2(1728, 1117)
 texture = SubResource("PlaceholderTexture2D_5xgho")
 centered = false
 
@@ -19,32 +17,30 @@ centered = false
 [node name="WallTop" type="StaticBody2D" parent="Bounds"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/WallTop"]
-position = Vector2(577, -12.999999)
+position = Vector2(868.9999, -31.000004)
 scale = Vector2(100, 1e-05)
 shape = SubResource("RectangleShape2D_u52ul")
 
 [node name="WallBottom" type="StaticBody2D" parent="Bounds"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/WallBottom"]
-position = Vector2(575, 656)
+position = Vector2(867.125, 1148.875)
 scale = Vector2(100, 1e-05)
 shape = SubResource("RectangleShape2D_u52ul")
 
 [node name="WallLeft" type="StaticBody2D" parent="Bounds"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/WallLeft"]
-position = Vector2(-14, 320)
+position = Vector2(-30.000002, 647.99994)
 rotation = -1.5707964
 scale = Vector2(100, 1e-05)
 shape = SubResource("RectangleShape2D_u52ul")
 
 [node name="Wall Right" type="StaticBody2D" parent="Bounds"]
+position = Vector2(-3, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/Wall Right"]
-position = Vector2(1169, 333.99997)
+position = Vector2(1765.0001, 637)
 rotation = -1.5707964
 scale = Vector2(100, 1e-05)
 shape = SubResource("RectangleShape2D_u52ul")
-
-[node name="Player" parent="." instance=ExtResource("1_u52ul")]
-position = Vector2(585, 306)
