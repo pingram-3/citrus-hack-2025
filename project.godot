@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CitrusHack2025"
-run/main_scene="uid://b16wqnv4k4288"
+run/main_scene="uid://btjkbbl60rhjh"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
