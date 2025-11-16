@@ -26,6 +26,7 @@ func _shoot():
 		shootDirection = (targetPosition - global_position).normalized()
 
 		var m1 = preloadm1.instantiate()
+		get_parent().add_child(m1)
 		m1.launchProjectile(global_position, targetPosition)
 		get_parent().add_child(m1)
 

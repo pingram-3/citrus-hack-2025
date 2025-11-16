@@ -19,9 +19,10 @@ texture = SubResource("PlaceholderTexture2D_5xgho")
 centered = false
 
 [node name="Bounds" type="Node2D" parent="."]
-metadata/_edit_lock_ = true
 
 [node name="WallTop" type="StaticBody2D" parent="Bounds"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/WallTop"]
 position = Vector2(863.99994, -31.48438)
@@ -29,6 +30,8 @@ scale = Vector2(100, 1e-05)
 shape = SubResource("RectangleShape2D_u52ul")
 
 [node name="WallBottom" type="StaticBody2D" parent="Bounds"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/WallBottom"]
 position = Vector2(867.125, 1150.7109)
@@ -36,6 +39,8 @@ scale = Vector2(100, 1e-05)
 shape = SubResource("RectangleShape2D_u52ul")
 
 [node name="WallLeft" type="StaticBody2D" parent="Bounds"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/WallLeft"]
 position = Vector2(-31.000044, 647.99994)
@@ -45,6 +50,8 @@ shape = SubResource("RectangleShape2D_u52ul")
 
 [node name="Wall Right" type="StaticBody2D" parent="Bounds"]
 position = Vector2(-3, 2)
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/Wall Right"]
 position = Vector2(1761.9688, 630)
@@ -60,6 +67,8 @@ texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D2"]
 position = Vector2(-0.0002522111, 0.27855155)
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/Area2D"]
 position = Vector2(-0.00024414063, -0.20748901)
@@ -73,6 +82,8 @@ scale = Vector2(0.384, 2.3899999)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D3"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D3/Area2D"]
 position = Vector2(-0.00024414063, -0.20748901)
@@ -86,6 +97,8 @@ scale = Vector2(0.25479648, 2.2406461)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D4"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D4/Area2D"]
 position = Vector2(-0.00024414063, -0.2074585)
@@ -100,6 +113,8 @@ scale = Vector2(0.2557444, 2.2363198)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D5"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D5/Area2D"]
 position = Vector2(-0.00024414063, -0.20748901)
@@ -113,6 +128,8 @@ scale = Vector2(0.25599983, 1.5999999)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D6"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D6/Area2D"]
 position = Vector2(0, -0.20748138)
@@ -126,6 +143,8 @@ scale = Vector2(0.24, 1.5975)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D7"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D7/Area2D"]
 position = Vector2(-0.00024414063, -0.20748138)
@@ -139,6 +158,8 @@ scale = Vector2(0.25599998, 1.7600003)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D8"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D8/Area2D"]
 position = Vector2(-0.00024414063, -0.20748138)
@@ -152,6 +173,8 @@ scale = Vector2(0.25600037, 1.760001)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
 [node name="Area2D" type="StaticBody2D" parent="Sprite2D9"]
+collision_layer = 7
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D9/Area2D"]
 position = Vector2(0, -0.2074585)
