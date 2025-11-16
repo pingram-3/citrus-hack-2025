@@ -9,7 +9,7 @@ func _ready():
 	connect("area_entered", Callable(self, "_on_area_entered"))
 	connect("body_entered", Callable(self, "_on_body_entered"))
 
-func launchProjectile(origin: Vector2, targetPosition: Vector2):
+func launch_projectile(origin: Vector2, targetPosition: Vector2):
 	global_position = origin
 	direction = (targetPosition - origin).normalized()
 
