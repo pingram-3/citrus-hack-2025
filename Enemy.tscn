@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+[gd_scene load_steps=4 format=3 uid="uid://0vsynl3dc1r7"]
+
+[ext_resource type="Script" uid="uid://bvd4j8p1p5ca" path="res://enemy.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://fv4d563terdq" path="res://Assets/goblinEnemy.png" id="2_s7bn3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(124, 114)
+
+[node name="Enemy" type="Node2D"]
+=======
 [gd_scene load_steps=5 format=3 uid="uid://ie3dxjpcv3dj"]
 
 [ext_resource type="Script" uid="uid://bvd4j8p1p5ca" path="res://enemy.gd" id="1_0e48y"]
@@ -49,6 +60,7 @@ texture = ExtResource("2_epypp")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy3"]
 position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_0hol4")
+>>>>>>> 47c85d4cabcf452486a98c8a1c90cb16eaf05233
 
 [node name="Enemy" type="CharacterBody2D" parent="." groups=["Enemy"]]
 position = Vector2(-239, 16)
@@ -57,9 +69,18 @@ script = ExtResource("1_0e48y")
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy"]
 modulate = Color(1, 0, 0, 1)
+<<<<<<< HEAD
+position = Vector2(-0.99999714, 1.4999976)
+scale = Vector2(0.221875, 0.21406251)
+texture = ExtResource("2_s7bn3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
+position = Vector2(-3, 7)
+=======
 position = Vector2(0, 2)
 texture = ExtResource("2_epypp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
 position = Vector2(-1, 1)
+>>>>>>> 47c85d4cabcf452486a98c8a1c90cb16eaf05233
 shape = SubResource("RectangleShape2D_0hol4")
