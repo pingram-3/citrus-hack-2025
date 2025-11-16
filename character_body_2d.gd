@@ -35,13 +35,9 @@ func _shoot():
 		shootDirection = (targetPosition - global_position).normalized()
 
 		var m1 = preloadm1.instantiate()
-<<<<<<< HEAD
+
 		get_parent().add_child(m1)
-		m1.launchProjectile(global_position, targetPosition)
-=======
 		m1.launch_projectile(global_position, targetPosition)
->>>>>>> main
-		get_parent().add_child(m1)
 
 		await get_tree().create_timer(fire_rate).timeout
 		isShooting = false
@@ -64,8 +60,8 @@ func _secondspell():
 
 	var ability_proj = scene.instantiate()
 	var target = get_global_mouse_position()
-	ability_proj.launchProjectile(global_position, target)
 	get_parent().add_child(ability_proj)
+	ability_proj.launchProjectile(global_position, target)
 
 	# cooldown timer
 	await get_tree().create_timer(ability_cooldown).timeout
