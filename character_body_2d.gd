@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-var speed = 300.0
+var speed = 500.0
 var hearts = 3
 @export var fire_rate := 0.2
 @export var selected_ability := "fireball"
@@ -35,8 +35,9 @@ func _shoot():
 		shootDirection = (targetPosition - global_position).normalized()
 
 		var m1 = preloadm1.instantiate()
-		m1.launch_projectile(global_position, targetPosition)
+
 		get_parent().add_child(m1)
+		m1.launch_projectile(global_position, targetPosition)
 
 		await get_tree().create_timer(fire_rate).timeout
 		isShooting = false
@@ -59,8 +60,8 @@ func _secondspell():
 
 	var ability_proj = scene.instantiate()
 	var target = get_global_mouse_position()
-	ability_proj.launchProjectile(global_position, target)
 	get_parent().add_child(ability_proj)
+	ability_proj.launchProjectile(global_position, target)
 
 	# cooldown timer
 	await get_tree().create_timer(ability_cooldown).timeout
