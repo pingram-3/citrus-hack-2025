@@ -14,7 +14,7 @@ func take_damage(amount):
 		queue_free()
 
 func _physics_process(delta):
-	var direction=(target.position - position).normalized()
+	var direction=(target.position - global_position).normalized()
 	velocity = direction * speed
 	look_at(target.position)
 	move_and_slide()
