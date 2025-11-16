@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://btjkbbl60rhjh"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5xgho"]
+[ext_resource type="Texture2D" uid="uid://bj0673rtkfnd0" path="res://Assets/background.png" id="1_u52ul"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u52ul"]
 size = Vector2(17.257502, 6142190.5)
@@ -14,8 +14,8 @@ size = Vector2(504.1316, 200.41489)
 [node name="Level" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1728, 1120)
-texture = SubResource("PlaceholderTexture2D_5xgho")
+scale = Vector2(0.21574998, 0.18666665)
+texture = ExtResource("1_u52ul")
 centered = false
 
 [node name="Bounds" type="Node2D" parent="."]
@@ -153,7 +153,7 @@ shape = SubResource("RectangleShape2D_vonw3")
 
 [node name="Sprite2D8" type="Sprite2D" parent="."]
 modulate = Color(0.023529412, 1, 1, 1)
-position = Vector2(256, 944)
+position = Vector2(388, 944)
 scale = Vector2(0.25599998, 1.7600003)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 
@@ -162,13 +162,13 @@ collision_layer = 7
 collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D8/Area2D"]
-position = Vector2(-0.00024414063, -0.20748138)
+position = Vector2(-5.7220313e-06, 3.3974648e-06)
 scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_vonw3")
 
 [node name="Sprite2D9" type="Sprite2D" parent="."]
 modulate = Color(0.023529412, 1, 1, 1)
-position = Vector2(1472, 944)
+position = Vector2(1344, 944)
 scale = Vector2(0.25600037, 1.760001)
 texture = SubResource("PlaceholderTexture2D_u52ul")
 

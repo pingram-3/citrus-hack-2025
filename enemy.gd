@@ -1,5 +1,5 @@
 extends CharacterBody2D
-@onready var target=$"../Player"
+@onready var target= get_node("/root/Main/Player")
 
 var speed = 50
 var destroy_distance = 157 
